@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaGithub } from "react-icons/fa";
-
+import "./home.css"
 const Social = () => {
   return (
     <nav className="home-side-nav">
