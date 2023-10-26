@@ -4,7 +4,7 @@ const Header = () => {
     return(
         <header className="header">
             <div className="header-section global-width">
-                <a href="javascript:void(0)" className="logo">
+                <a href="#" className="logo">
                     Sera Mariam George
                 </a>
                 <nav className="header-nav">

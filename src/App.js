@@ -1,12 +1,14 @@
 import './App.css';
-import Header from './components/header/Header';
-import Home from './components/home/Home';
+import Header from './layout/header/Header';
+import Home from './layout/home/Home';
 
 function App() {
   return (
     <>
-    <Header></Header>
-    <Home></Home>
+    <Header/>
+    <main className='main section global-width'>
+      <Home/>
+    </main>
     </>
   );
 }

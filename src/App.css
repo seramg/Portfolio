@@ -91,9 +91,14 @@ body {
 
 h1,
 h2,
-h3 {
+h3{
+  margin: 0;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+}
+
+p{
+  margin: 0;
 }
 
 ul {
@@ -116,68 +121,64 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.link-item {
+  text-decoration: none;
+}
 .section {
   padding: 6rem 0 2rem;
 }
 
-.section__title {
+.section-title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
 }
 
-.section__subtitle {
+.section-subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: 4rem;
 }
 
-.section__title,
-.section__subtitle {
+.section-title,
+.section-subtitle {
   text-align: center;
 }
-
+.icon{
+  width: 24px;
+  height: 24px;
+}
 /*=============== LAYOUT ===============*/
-.logo{
-    color: var(--title-color);
-    font-weight: var(--font-medium);
+.flex-container{
+  display: flex;
 }
 .global-width {
   max-width: 1200px;
   margin: 0 auto;
-}
-.grid {
-  display: grid;
-  gap: 1.5rem;
 }
 .ul-reset {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.link-item {
-  text-decoration: none;
-}
 /*=============== BUTTONS ===============*/
 .button {
-  display: inline-block;
-  background-color: var(--title-color);
   color: var(--container-color);
-  padding: 1.25rem 2rem;
-  border-radius: 1rem;
   font-weight: var(--font-medium);
 }
 
-.button:hover {
-  background-color: var(--title-color-dark);
-}
-
-.button__icon {
+.button-icon {
   margin-left: var(--mb-0-5);
+  color: var(--container-color);
 }
 
-.button--flex {
+.button-container {
   display: inline-flex;
   align-items: center;
+  background-color: var(--title-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+}
+.button-container:hover {
+  background-color: var(--title-color-dark);
 }
 /* =============== BREAKPOINTS ===============
 /* For large devices */
