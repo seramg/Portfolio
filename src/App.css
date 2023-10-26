@@ -65,15 +65,17 @@
 
 /*=============== BASE ===============*/
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Lexend Deca", roboto;
+}
 body,
 button,
 input,
@@ -135,17 +137,26 @@ img {
 }
 
 /*=============== LAYOUT ===============*/
-.container {
-  max-width: 968px;
-  margin-left: auto;
-  margin-right: auto;
+.logo{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
 }
-
+.global-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .grid {
   display: grid;
   gap: 1.5rem;
 }
-
+.ul-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.link-item {
+  text-decoration: none;
+}
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
@@ -168,10 +179,9 @@ img {
   display: inline-flex;
   align-items: center;
 }
-
-/*=============== BREAKPOINTS ===============*/
+/* =============== BREAKPOINTS ===============
 /* For large devices */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
@@ -186,9 +196,9 @@ img {
     height: 22px;
   }
 }
-
+ */
 /* For medium devices */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   body {
     margin: 0 0 var(--header-height) 0;
   }
@@ -203,10 +213,10 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-}
+} */
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+/* @media screen and (max-width: 350px) {
   :root {
     --big-font-size: 2.25rem;
   }
@@ -215,4 +225,4 @@ img {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-}
+} */ 

@@ -1,0 +1,29 @@
+/*=============== HEADER ===============*/
+.header {
+  z-index: var(--z-fixed);
+  position: sticky;
+}
+.header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+
+  .list-item {
+    padding: 0 21px;
+  }
+  .link-item {
+    padding: 21px 0px;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-normal);
+    :hover {
+      font-weight: var(--font-medium);
+    }
+  }
+}
