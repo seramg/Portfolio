@@ -4,7 +4,7 @@ import "./home.css"
 const Social = () => {
   return (
     <nav className="home-side-nav">
-      <ul className="ul-reset home-side-menu">
+      <ul className="ul-reset home-side-menu flex-container">
         <li className="list-item">
           <a href="#" className="link-item">
             <FaInstagram className="icon" />

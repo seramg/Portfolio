@@ -5,7 +5,7 @@ const Button = ({ text: text, icon: IconComponent }) => {
       <a href="#" className="button">
         {text}
       </a>
-      <IconComponent className="button-icon" />
+      {IconComponent && <IconComponent className="button-icon" />}
     </div>
   );
 };

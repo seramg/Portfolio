@@ -7,7 +7,7 @@ import Button from "../../components/Button";
 const Home = () => {
   return (
     <section className="home section" id="home">
-      <div className="home flex-container">
+      <div className="home-content flex-container">
         <Social />
         <div className="intro-section flex-container">
           <div className="intro-title">
@@ -17,7 +17,7 @@ const Home = () => {
             <div className="hyphen"></div>
             <h2 className="section-subtitle">Software Developer</h2>
           </div>
-          <p className="intro-content">
+          <p className="text">
           I am a software developer based in Trivandrum and I am very passionate and dedicated to my work.
           </p>
           <Button text="Say Hello" icon={FaPaperPlane}/>

@@ -124,6 +124,7 @@ img {
 .link-item {
   text-decoration: none;
 }
+
 .section {
   padding: 6rem 0 2rem;
 }
@@ -145,6 +146,16 @@ img {
 .icon{
   width: 24px;
   height: 24px;
+}
+
+.text {
+  color: var(--text-color);
+  margin-bottom: var(--mb-0-25);
+}
+
+.line-title{
+  flex-direction: column;
+  margin-bottom: var(--mb-2);
 }
 /*=============== LAYOUT ===============*/
 .flex-container{
